@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+* { /* RESET */
+    vertical-align: baseline;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    font-style: inherit;
+    font-size: 18px;
+    line-height: 1.3;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    color: black;
+    background-color: white;
+}
+
+:root {
+    --green: #01C698;
+    --yellow: #eede84;
+    --orange: #db9f06;
+}
+
+head {
+    display: none;
+}
+
+body {
+    display: block;
+    background-color: lightgray;
+    height: 2000px;
+    padding: 50px;
+}
+
+main {
+    display: block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    border-bottom: 2px solid lightgray;
+}
+
+header img {
+    margin: 0 auto 0 0;
+    width: 200px;
+}
+
+header a {
+    color: darkgray;
+    padding-left: 50px;
+}
+
+#home {
+    color: black;
+    padding-left: 0;
+}
+
+#right-nav {
+    margin: 0 0 0 auto;
+}
+
+#login {
+    font-weight: 700;
+    color: var(--green);
+}
+
+#get-started {
+    color: white;
+    background-color: var(--green);
+    border-radius: 30px;
+    padding: 20px 30px;
+    margin-left: 50px;
+}
+
+article {
+    display: block;
+    padding: 50px 100px;
+}
+
+.icon {
+    width: 15px;
+}
+
+.landing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing-text {
+    width: 120%;
+    margin-right: 50px;
+}
+
+.chip {
+    background-color: var(--yellow);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+.chip p {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--orange);
+    background: none;
+}
+.chip .icon {
+    background: none;
+    color: var(--orange)
+}
+
+.landing-text h2 {
+    font-size: 3.5em;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+b {
+    font-size: inherit;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.subtitle {
+    margin-top: 30px;
+    color: darkgrey;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+#example-nav {
+    margin-top: 30px;
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px 5px lightgrey;
+}
+
+.nav-chip img {
+
+}
+
+.nav-chip p {
+    color: #a9a9a9;
+}
+
+.big-image {
+    width: 130%;
+}
+
+footer {
+    display: none;
+}
