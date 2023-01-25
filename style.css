@@ -15,7 +15,6 @@
     padding: 0;
     margin: 0;
     color: black;
-    background-color: white;
 }
 
 :root {
@@ -37,6 +36,7 @@ body {
 
 main {
     display: block;
+    background-color: white;
 }
 
 header {
@@ -85,6 +85,7 @@ article {
 }
 
 .icon {
+    min-width: 15px;
     width: 15px;
 }
 
@@ -143,17 +144,119 @@ b {
 }
 
 .nav-chip img {
+    margin-right: 10px;
+    width: 15px;
+}
 
+ #dropdown {
+    padding-right: 25px;
+    border-right: 1px solid #a9a9a9;
+    margin: 0 25px 0 10px;
+    width: 41px;
+    height: 23px;
+    vertical-align: bottom;
 }
 
 .nav-chip p {
     color: #a9a9a9;
+    padding-right: 25px;
+    border-right: 1px solid #a9a9a9;
+    margin-right: 25px;
+}
+
+#category {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.green-button {
+    color: white;
+    background-color: var(--green);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 0px;
 }
 
 .big-image {
     width: 130%;
+    margin-left: 30px;
 }
+
+.performance {
+    background-color: var(--green);
+    display: flex;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse .big-image {
+    margin-right: 30px;
+}
+
+#loading {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: none;
+    display: none;
+}
+
+/* #loading img {
+    width: 100%;
+    animation: spin 0.5s steps(8, end) 0s infinite;
+    background: none;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} */
 
 footer {
     display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .landing {
+        flex-direction: column;
+    }
+
+    .landing-text {
+        width: 100%;
+    }
+
+    #example-nav {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .nav-chip img {
+        margin-right: 5px;
+    }
+
+    .nav-chip p {
+        padding-right: 15px;
+        margin: 0 15px 0 10px;
+        width: 21px;
+    }
+
+    #dropdown {
+        padding-right: 15px;
+    }
+
+    .big-image {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
 }
